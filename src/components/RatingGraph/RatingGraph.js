@@ -1,6 +1,5 @@
 import { Line } from 'react-chartjs-2';
 import moment from 'moment';
-import { lightGreen } from '@material-ui/core/colors';
 
 
 const RatingGraph = ({userContest}) => {

@@ -85,7 +85,7 @@ const VersusProblemIndexGraph = ({userSubmissions1,userSubmissions2,username1,us
     
     var indexAsc = new Map([...index.entries()].sort());
 
-    for(let[key,value] of indexAsc){
+    for(let[key] of indexAsc){
         data.labels.push(key);
         data.datasets[0].data.push(index1.has(key)? index1.get(key) :0);
         data.datasets[1].data.push(index2.has(key)? index2.get(key) :0);  

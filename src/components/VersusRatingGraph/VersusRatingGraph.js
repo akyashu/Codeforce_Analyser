@@ -50,7 +50,7 @@ const VersusRatingGraph = ({userContest1,userContest2}) => {
 
     var datesMapAsc = new Map([...datesMap.entries()].sort());
 
-    for(let[key,value] of datesMapAsc){
+    for(let[key] of datesMapAsc){
       var date = new Date(null);
       date.setTime(key*1000);
       let momentDate = moment(date).format('MMM D, YYYY');

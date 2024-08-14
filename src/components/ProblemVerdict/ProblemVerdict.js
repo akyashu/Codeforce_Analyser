@@ -1,13 +1,11 @@
 import { Pie } from "react-chartjs-2";
 import "chartjs-plugin-datalabels";
-import {Chart} from 'chart.js';
-import ChartDataLabels from 'chartjs-plugin-datalabels';
 
 
 const ProblemVerdict = ({userSubmissions}) => {
    
-    let ac=0,tle=0,wa=0,rte=0,others=0,total;
-    total=userSubmissions.length;
+    let ac=0,tle=0,wa=0,rte=0,others=0;
+    let total=userSubmissions.length;
     for(let i=0;i<userSubmissions.length;i++){
         if(userSubmissions[i].verdict==="OK"){
             ac++;
