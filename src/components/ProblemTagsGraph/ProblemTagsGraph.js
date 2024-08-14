@@ -36,35 +36,59 @@ const ProblemTagsGraph = ({userSubmissions}) => {
             label: '',
             data: [],
             backgroundColor: [
-                "rgba(138, 216, 38, 0.8)",
-                "rgba(228, 28, 28, 0.8)",
-                "rgba(4, 119, 198, 0.8)",
-                'rgba(198, 8, 140, 0.8)',
-                'rgba(155, 159, 182, 0.8)',
+    "rgba(138, 216, 38, 0.8)",  // Light green
+    "rgba(228, 28, 28, 0.8)",   // Bright red
+    "rgba(4, 119, 198, 0.8)",    // Bright blue
+    "rgba(198, 8, 140, 0.8)",    // Bright pink
+    "rgba(155, 159, 182, 0.8)",  // Light grayish blue
+    "rgba(63, 75, 172, 0.8)",    // Deep blue
+    "rgba(9, 135, 54, 0.8)",     // Dark green
+    "rgba(6, 11, 110, 0.8)",     // Very dark blue
+    "rgba(255, 206, 86, 0.8)",   // Bright yellow
+    "rgba(75, 192, 192, 0.8)",   // Light teal
+    "rgba(153, 102, 255, 0.8)",  // Light purple
+    "rgba(255, 159, 64, 0.8)",   // Bright orange
+    "rgba(255, 99, 132, 0.8)",   // Light pink
+    "rgba(54, 162, 235, 0.8)",   // Light blue
+    "rgba(255, 205, 86, 0.8)",   // Light yellow
+],
+borderColor: [
+    "rgba(138, 216, 38, 1)",    // Light green border
+    "rgba(228, 28, 28, 1)",     // Bright red border
+    "rgba(4, 119, 198, 1)",     // Bright blue border
+    "rgba(198, 8, 140, 1)",     // Bright pink border
+    "rgba(155, 159, 182, 1)",   // Light grayish blue border
+    "rgba(63, 75, 172, 1)",     // Deep blue border
+    "rgba(9, 135, 54, 1)",      // Dark green border
+    "rgba(6, 11, 110, 1)",      // Very dark blue border
+    "rgba(255, 206, 86, 1)",    // Bright yellow border
+    "rgba(75, 192, 192, 1)",    // Light teal border
+    "rgba(153, 102, 255, 1)",   // Light purple border
+    "rgba(255, 159, 64, 1)",    // Bright orange border
+    "rgba(255, 99, 132, 1)",    // Light pink border
+    "rgba(54, 162, 235, 1)",    // Light blue border
+    "rgba(255, 205, 86, 1)",    // Light yellow border
+],
+hoverBackgroundColor: [
+    "rgba(102, 179, 26, 1)",    // Darker green on hover
+    "rgba(204, 0, 0, 1)",       // Darker red on hover
+    "rgba(2, 90, 160, 1)",      // Darker blue on hover
+    "rgba(160, 5, 100, 1)",     // Darker pink on hover
+    "rgba(130, 135, 160, 1)",   // Darker grayish blue on hover
+    "rgba(50, 60, 140, 1)",     // Darker deep blue on hover
+    "rgba(7, 100, 45, 1)",      // Darker green on hover
+    "rgba(0, 8, 80, 1)",        // Darker very dark blue on hover
+    "rgba(204, 179, 30, 1)",    // Darker yellow on hover
+    "rgba(60, 140, 140, 1)",    // Darker teal on hover
+    "rgba(120, 80, 200, 1)",    // Darker purple on hover
+    "rgba(255, 140, 50, 1)",    // Darker orange on hover
+    "rgba(204, 83, 132, 1)",    // Darker pink on hover
+    "rgba(44, 130, 205, 1)",    // Darker light blue on hover
+    "rgba(255, 190, 50, 1)",    // Darker light yellow on hover
+],
+borderWidth: 1,
+hoverBorderWidth: 2,
 
-                'rgba(63, 75, 172, 0.8)',
-                'rgba(9, 135, 54, 0.8)',
-                'rgba(6, 11, 110, 0.8)',
-                'rgba(255, 206, 86, 0.8)',
-                'rgba(75, 192, 192, 0.8)',
-                'rgba(153, 102, 255, 0.8)',
-                'rgba(255, 159, 64, 0.8)',
-            ],
-            borderColor: [
-                "rgba(138, 216, 38, 1)",
-                "rgba(228, 28, 28, 1)",
-                "rgba(4, 119, 198, 1)",
-                'rgba(198, 8, 140, 1)',
-                'rgba(155, 159, 182, 1)',
-                'rgba(63, 75, 172, 1)',
-                'rgba(9, 135, 54, 1)',
-                'rgba(6, 11, 110, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)',
-            ],
-            borderWidth: 1,
             
           },
         ],

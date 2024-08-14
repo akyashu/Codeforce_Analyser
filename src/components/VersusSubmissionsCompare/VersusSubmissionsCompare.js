@@ -37,23 +37,43 @@ const VersusSubmissionsCompare = ({username1,username2,userSubmissions1,userSubm
             label: username1,
             data: [tried1.size,solved1.size,submissions1],
             backgroundColor: [
-              'red',
-            ],
-            borderColor: [
-              'rgba(255, 99, 132, 1)',
-            ],
-            borderWidth: 2,
+    'green',       // Base green background
+],
+
+borderColor: [
+    'green',       // Base green border
+],
+
+hoverBackgroundColor: [
+    'darkgreen',   // Darker green for hover
+],
+
+hoverBorderColor: [
+    'darkgreen',   // Darker green border for hover
+],
+
+borderWidth: 2,
+hoverBorderWidth: 2,
           },
           {
             label: username2,
             data: [tried2.size,solved2.size,submissions2],
             backgroundColor: [
-              'blue',
+              'red',
             ],
             borderColor: [
-              'rgba(255, 99, 132, 1)',
+              'red',
             ],
-            borderWidth: 2,
+            hoverBackgroundColor: [
+    'darkred',   // Darker green for hover
+],
+
+hoverBorderColor: [
+    'darkred',   // Darker green border for hover
+],
+
+borderWidth: 2,
+hoverBorderWidth: 2,
           },
         ],
     };

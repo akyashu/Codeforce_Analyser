@@ -131,11 +131,14 @@ const Versus = () => {
                     />
                 </div>
                 <Button
-                    className="versus-btn"
-                    type="submit"
-                    color="secondary"
-                    variant="contained"
-                >
+    className="versus-btn"
+    type="submit"
+    variant="contained"
+    style={{
+        backgroundColor: "#FF5722", // Example of a bold orange color
+        color: "white", // Text color
+    }}
+>
                     Submit
                 </Button>
             </form>

@@ -21,23 +21,40 @@ const ProblemLanguage = ({ userSubmissions }) => {
             {
                 label: "",
                 data: [],
-                backgroundColor: [
-                    "rgba(228, 28, 28, 0.8)",
-                    "rgba(138, 216, 38, 0.8)",
-                    "rgba(4, 119, 198, 0.8)",
-                    'rgba(198, 8, 140, 0.8)',
-                    'rgba(155, 159, 182, 0.8)',
-                    'rgba(205, 170, 30, 0.8)',
-                ],
-                borderColor: [
-                    "rgba(228, 28, 28, 1)",
-                    "rgba(138, 216, 38, 1)",
-                    "rgba(4, 119, 198, 1)",
-                    'rgba(198, 8, 140, 1)',
-                    'rgba(155, 159, 182, 1)',
-                    'rgba(205, 170, 30, 1)',
-                ],
-                borderWidth: 1,
+               backgroundColor: [
+    "rgba(228, 28, 28, 0.8)",  // Bright red
+    "rgba(138, 216, 38, 0.8)",  // Bright green
+    "rgba(4, 119, 198, 0.8)",   // Bright blue
+    "rgba(198, 8, 140, 0.8)",   // Bright pink
+    "rgba(155, 159, 182, 0.8)", // Light grayish blue
+    "rgba(205, 170, 30, 0.8)",  // Bright yellow
+],
+borderColor: [
+    "rgba(228, 28, 28, 1)",    // Bright red border
+    "rgba(138, 216, 38, 1)",   // Bright green border
+    "rgba(4, 119, 198, 1)",    // Bright blue border
+    "rgba(198, 8, 140, 1)",    // Bright pink border
+    "rgba(155, 159, 182, 1)",  // Light grayish blue border
+    "rgba(205, 170, 30, 1)",   // Bright yellow border
+],
+hoverBackgroundColor: [
+    "rgba(180, 10, 10, 1)",    // Darker red on hover
+    "rgba(100, 180, 20, 1)",   // Darker green on hover
+    "rgba(0, 90, 150, 1)",     // Darker blue on hover
+    "rgba(160, 5, 100, 1)",    // Darker pink on hover
+    "rgba(130, 135, 160, 1)",  // Darker grayish blue on hover
+    "rgba(170, 140, 20, 1)",   // Darker yellow on hover
+],
+hoverBorderColor: [
+    "rgba(180, 10, 10, 1)",    // Darker red border on hover
+    "rgba(100, 180, 20, 1)",   // Darker green border on hover
+    "rgba(0, 90, 150, 1)",     // Darker blue border on hover
+    "rgba(160, 5, 100, 1)",    // Darker pink border on hover
+    "rgba(130, 135, 160, 1)",  // Darker grayish blue border on hover
+    "rgba(170, 140, 20, 1)",   // Darker yellow border on hover
+],
+borderWidth: 1,
+hoverBorderWidth: 2,
             },
         ],
     };

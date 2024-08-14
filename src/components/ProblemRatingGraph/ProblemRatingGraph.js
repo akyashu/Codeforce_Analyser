@@ -54,13 +54,30 @@ const ProblemRatingGraph = ({userSubmissions}) => {
         {
           label: 'Problem Count',
           data: [],
-          backgroundColor: [
-            'rgba(46, 204, 113, 0.8)', // Light green
-          ],
-          borderColor: [
-            'rgba(39, 174, 96, 1)', // Dark green
-          ],
-          borderWidth: 2,
+          backgroundColor: 'red', // Light red
+borderColor: 'rgba(255, 99, 132, 1)',       // Red
+
+hoverBackgroundColor: [
+    'rgba(192, 57, 43, 1)',     // Dark red on hover
+    'rgba(41, 128, 185, 1)',    // Dark blue on hover (for variety)
+    'rgba(243, 156, 18, 1)',    // Dark yellow on hover (for variety)
+    'rgba(142, 68, 173, 1)',    // Dark purple on hover (for variety)
+    'rgba(22, 160, 133, 1)',    // Dark teal on hover (for variety)
+    'rgba(211, 84, 0, 1)',      // Dark orange on hover (for variety)
+    'rgba(39, 174, 96, 1)',     // Dark green on hover (for variety)
+],
+hoverBorderColor: [
+    'rgba(255, 82, 82, 1)',     // Darker red border on hover
+    'rgba(52, 152, 219, 1)',    // Darker blue border on hover (for variety)
+    'rgba(241, 196, 15, 1)',    // Darker yellow border on hover (for variety)
+    'rgba(155, 89, 182, 1)',    // Darker purple border on hover (for variety)
+    'rgba(26, 188, 156, 1)',    // Darker teal border on hover (for variety)
+    'rgba(230, 126, 34, 1)',    // Darker orange border on hover (for variety)
+    'rgba(46, 204, 113, 1)',    // Darker green border on hover (for variety)
+],
+borderWidth: 1,
+hoverBorderWidth: 2,
+
         },
       ],
   };

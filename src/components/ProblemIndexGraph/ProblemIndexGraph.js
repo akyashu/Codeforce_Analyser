@@ -48,13 +48,29 @@ const IndexGraph = ({userSubmissions}) => {
         {
           label: 'Problem Count',
           data: [],
-          backgroundColor: [
-            'rgba(52, 152, 219, 0.8)', // Light blue
-          ],
-          borderColor: [
-            'rgba(41, 128, 185, 1)', // Dark blue
-          ],
-          borderWidth: 2,
+          backgroundColor: 'green', // Light red
+borderColor: 'palegreen',       // Red
+
+hoverBackgroundColor: [
+    'rgba(243, 156, 18, 1)',    // Dark yellow on hover
+    'rgba(142, 68, 173, 1)',    // Dark purple on hover
+    'rgba(22, 160, 133, 1)',    // Dark teal on hover
+    'rgba(39, 174, 96, 1)',     // Dark green on hover
+    'rgba(192, 57, 43, 1)',     // Dark red on hover
+    'rgba(211, 84, 0, 1)',      // Dark orange on hover
+    'rgba(41, 128, 185, 1)',    // Dark blue on hover
+],
+hoverBorderColor: [
+    'rgba(243, 156, 18, 1)',    // Dark yellow border
+    'rgba(142, 68, 173, 1)',    // Dark purple border
+    'rgba(22, 160, 133, 1)',    // Dark teal border
+    'rgba(39, 174, 96, 1)',     // Dark green border
+    'rgba(192, 57, 43, 1)',     // Dark red border
+    'rgba(211, 84, 0, 1)',      // Dark orange border
+    'rgba(41, 128, 185, 1)',    // Dark blue border
+],
+borderWidth: 1,
+hoverBorderWidth: 2,
         },
       ],
   };

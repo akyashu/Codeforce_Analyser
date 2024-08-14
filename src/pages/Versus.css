@@ -43,9 +43,9 @@
     margin-left: 10vw;
     width: 80vw;
     margin-top: 2vh;
-    background-color: #f0d6f6;
+    background-color: #FFD9C0;
     border-radius: 10px;
-    border: 1px dashed black;
+    border: 1px dashed #F9B572 ;
 }
 .versus-last{
     margin-bottom: 2vh;
@@ -61,7 +61,7 @@
   }
 .versus-user-bio-component {
     width: 38vw;
-    border: 1px dashed black;
+    border: 1px dashed ;
 }
   
 @media only screen and (max-width: 950px) {
@@ -87,9 +87,9 @@
   
 .versus-pie-chart-component {
     width: 35vw;
-    background-color: #f0d6f6;
+    background-color: #FFD9C0;
     border-radius: 10px;
-    border: 1px dashed black;
+    border: 1px dashed #F9B572 ;
 }
 @media only screen and (max-width: 950px) {
     .versus-pie-chart {
@@ -105,8 +105,8 @@
 
 /* Individual components */
 .versus-table-head{
-    background-color: #8ba3cf !important;
+    background-color: #F9B572 !important;
 }
 .versus-table-body{
-    background-color: #f0d6f6 ;
+    background-color: #FFD9C0 ;
 }

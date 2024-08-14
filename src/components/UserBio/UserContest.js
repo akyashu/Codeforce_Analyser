@@ -9,11 +9,20 @@ import Paper from '@material-ui/core/Paper';
 import './UserBio.css'
 const useStyles = makeStyles({
   table: {
-    // maxWidth: 500,
-    // minWidth: 450
+    fontFamily: 'Arial, sans-serif',
+    backgroundColor: '#F4F4F4', // Light gray for table container
+  },
+  tableHead: {
+    backgroundColor: '#F9B572', // Deep orange for header
+    color: 'white',
+  },
+  tableBody: {
+    backgroundColor: '#F9E8D9', // Pale teal for table body
+  },
+  tableCell: {
+    color: '#333333', // Dark gray for text
   },
 });
-
 const rows = [
 
 ];

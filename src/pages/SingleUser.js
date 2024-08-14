@@ -111,12 +111,15 @@ const SingleUser = () => {
                     color="primary"
                 // required
                 />
-                <Button
-                    className="btn"
-                    type="submit"
-                    color="secondary"
-                    variant="contained"
-                >
+                                <Button
+    className="versus-btn"
+    type="submit"
+    variant="contained"
+    style={{
+        backgroundColor: "#FF5722", // Example of a bold orange color
+        color: "white", // Text color
+    }}
+>
                     Submit
                 </Button>
             </form>

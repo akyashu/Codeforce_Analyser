@@ -1,5 +1,6 @@
 import { Line } from 'react-chartjs-2';
 import moment from 'moment';
+import { lightGreen } from '@material-ui/core/colors';
 
 
 const RatingGraph = ({userContest}) => {
@@ -11,8 +12,9 @@ const RatingGraph = ({userContest}) => {
             label: 'Rating',
             data: [],
             fill: false,
-            backgroundColor: 'rgb(228,28,28,1)',
-            borderColor: 'rgba(228,28,28,0.3)',
+            // backgroundColor: 'yellow', // A deep green
+            hoverBorderColor: 'darkgoldenrod',
+            borderColor: 'lightGreen'
           },
         ],
     };

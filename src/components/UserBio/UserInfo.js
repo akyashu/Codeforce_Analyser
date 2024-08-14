@@ -6,30 +6,41 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
-import './UserBio.css'
+import './UserBio.css';
+
 const useStyles = makeStyles({
   table: {
-    // maxWidth: 500,
-    // minWidth: 450
+    fontFamily: 'Arial, sans-serif',
+    backgroundColor: '#F4F4F4', // Light gray for table container
+  },
+  tableHead: {
+    backgroundColor: '#F9B572', // Deep orange for header
+    color: 'white',
+  },
+  tableBody: {
+    backgroundColor: '#FFD9C0', // Pale teal for table body
+  },
+  tableCell: {
+    color: '#333333', // Dark gray for text
   },
 });
 
-const rows = [
 
-];
+
+const rows = [];
 
 export default function UserInfo({ userInfo, username }) {
   const classes = useStyles();
 
-  let name=userInfo.firstName+" "+userInfo.lastName;
-  let country=userInfo.country;
-  let rating=userInfo.rating+'('+userInfo.rank+')';
-  let maxRating=userInfo.maxRating+'('+userInfo.maxRank+')';
-  let contribution=userInfo.contribution;
+  let name = userInfo.firstName + " " + userInfo.lastName;
+  let country = userInfo.country;
+  let rating = userInfo.rating + '(' + userInfo.rank + ')';
+  let maxRating = userInfo.maxRating + '(' + userInfo.maxRank + ')';
+  let contribution = userInfo.contribution;
 
-  rows.splice(0,rows.length);
+  rows.splice(0, rows.length);
   rows.push({
-    name:"Name",
+    name: "Name",
     data: name
   });
   rows.push({
@@ -50,22 +61,21 @@ export default function UserInfo({ userInfo, username }) {
   });
 
   return (
-    <TableContainer component={Paper}>
-      <Table className={classes.table} aria-label="simple table">
-        <TableHead className="table-head">
+    <TableContainer component={Paper} className={classes.table}>
+      <Table aria-label="simple table">
+        <TableHead className={classes.tableHead}>
           <TableRow>
-            <TableCell>Info of</TableCell>
-            <TableCell align="right">{username}</TableCell>
+            <TableCell className={classes.tableCell}>Info of</TableCell>
+            <TableCell align="right" className={classes.tableCell}>{username}</TableCell>
           </TableRow>
         </TableHead>
-        <TableBody className="table-body">
+        <TableBody className={classes.tableBody}>
           {rows.map((row) => (
             <TableRow key={row.name}>
-              <TableCell component="th" scope="row">
+              <TableCell component="th" scope="row" className={classes.tableCell}>
                 {row.name}
               </TableCell>
-              <TableCell align="right">{row.data}</TableCell>
-
+              <TableCell align="right" className={classes.tableCell}>{row.data}</TableCell>
             </TableRow>
           ))}
         </TableBody>

@@ -69,23 +69,26 @@ const VersusProblemRatingGraph = ({userSubmissions1,userSubmissions2,username1,u
             label: username1,
             data: [],
             backgroundColor: [
-              'red',
+              '#AC87C5',
+              
             ],
             borderColor: [
-              'rgba(255, 99, 132, 1)',
+              '#6C4F7C',
             ],
             borderWidth: 2,
+            hoverBorderWidth: 2,
           },
           {
             label: username2,
             data: [],
             backgroundColor: [
-              'blue',
+              '#FF90BC',
             ],
             borderColor: [
-              'rgba(255, 99, 132, 1)',
+              '#C2185B',
             ],
             borderWidth: 2,
+            hoverBorderWidth: 2,
           },
         ],
     };
